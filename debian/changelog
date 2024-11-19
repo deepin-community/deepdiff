@@ -1,5 +1,109 @@
-template-repository (1.0-1) unstable; urgency=medium
+deepdiff (6.7.1-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Remove old build dependency on python3-mock
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Alexandre Detiste <tchet@debian.org>  Thu, 28 Mar 2024 22:32:43 +0100
+
+deepdiff (6.7.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version
+  * Standards-Version: 4.6.2 (routine-update)
+  * Make sure conftest.py is found
+    Closes: #1052844
+  * Build-Depends: python3-tomli-w, python3-pydantic
+  * Demote python3-clevercsv to Recommends
+    Closes: #1050793
+
+ -- Andreas Tille <tille@debian.org>  Thu, 11 Jan 2024 20:42:16 +0100
+
+deepdiff (6.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version. (Closes: #1024907)
+
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Mon, 12 Dec 2022 10:41:02 -0500
+
+deepdiff (6.2.1-1) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Thu, 01 Dec 2022 15:45:04 -0500
+
+deepdiff (5.8.2-3) unstable; urgency=medium
+
+  * debian/tests/control
+    - install build-deps when running autopkgtests; Closes: #1014489
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 06 Jul 2022 23:30:41 -0400
+
+deepdiff (5.8.2-2) unstable; urgency=medium
+
+  * debian/control
+    - add toml and clevercsv to b-d, needed by tests
+    - run wrap-and-sort -at
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 28 Jun 2022 01:26:35 -0400
+
+deepdiff (5.8.2-1) unstable; urgency=medium
+
+  [ Andreas Tille ]
+  * Team upload.
+  * New upstream version. (Closes: #1011825)
+  * d/patches: drop 0001, as it has been upstreamed.
+
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Wed, 15 Jun 2022 14:14:08 -0400
+
+deepdiff (5.6.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/patches: add 0001 to fix testsuite failure on 32-bits systems.
+    (Closes: #1005036)
+
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Mon, 11 Apr 2022 15:12:11 -0400
+
+deepdiff (5.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Louis-Philippe Véronneau ]
+  * d/tests: add autopkgtests.
+
+  [ Andreas Tille ]
+  * Move package to Debian Python Team
+  * Standards-Version: 4.6.0 (routine-update)
+  * debhelper-compat 13 (routine-update)
+  * Drop ancient X-Python-Version field (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Strip unusual field spacing from debian/control.
+  * Update watch file format version to 4.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Remove Section on python3-deepdiff that duplicates source.
+  * Build-Depends: python3-wheel
+  * Add d/salsa-ci.yml
+
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Sat, 29 Jan 2022 18:34:09 -0500
+
+deepdiff (3.3.0-3) unstable; urgency=medium
+
+  * debian/patches/python-3.10.patch: New patch, fixing autopkgtests with
+    python3.10, by Steve Langasek (Closes: #1001292).
+
+ -- Michael Banck <mbanck@debian.org>  Fri, 24 Dec 2021 23:48:36 +0100
+
+deepdiff (3.3.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Add build-dependency on dh-python (Closes: #952361)
+  * Build-depend on python3-all instead of python3-dev
+
+ -- Graham Inggs <ginggs@debian.org>  Fri, 06 Mar 2020 15:08:26 +0000
+
+deepdiff (3.3.0-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Michael Banck <mbanck@debian.org>  Wed, 02 Jan 2019 13:49:12 +0100
