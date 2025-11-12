@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+export PYBUILD_NAME=deepdiff
+export PYBUILD_BEFORE_TEST=cp -a conftest.py {build_dir}
+export PYBUILD_TEST_ARGS=-k 'not test_polars'
 
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild

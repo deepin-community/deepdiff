@@ -1,0 +1,16 @@
+Tests: unittests
+Depends:
+ python3-all,
+ python3-clevercsv,
+ python3-click,
+ python3-jsonpickle,
+ python3-numpy,
+ python3-orderly-set,
+ python3-orjson,
+ python3-pydantic,
+ python3-pytest,
+ python3-pytest-benchmark,
+ python3-toml,
+ python3-tomli-w,
+ python3-yaml,
+ @,
